@@ -13,6 +13,8 @@ function Projects() {
                             image={item.image}
                             title={item.title}
                             description={item.description}
+                            code={item.code}
+                            link={item.link}
                         />
                     );
                 })}

@@ -17,7 +17,7 @@ function Navbar() {
                         key={item.path}
                         to={item.path}
                         className={({ isActive }) =>
-                            `px-3 py-2 rounded-[10px] grow ${isActive
+                            `px-3 py-2 rounded-[10px] flex-1 ${isActive
                                 ? "bg-violet-500 text-slate-100"
                                 : "text-slate-100 hover:bg-violet-950 transition-colors duration-300"
                             }`
