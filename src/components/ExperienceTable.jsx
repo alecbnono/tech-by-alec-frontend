@@ -7,8 +7,8 @@ function ExperienceTable() {
     const [experience, setExperience] = useState("Organizations");
 
     return (
-        <div className="flex flex-col gap-10 animation-opacity duration-300">
-            <div className="flex items-center justify-center gap-2 p-1 border-2 border-white rounded-[16px]">
+        <div className="flex flex-col gap-10 animation-opacity duration-300  bg-slate-950/50">
+            <div className="flex items-center justify-center gap-2 p-1 border-2 border-white rounded-[16px]  bg-slate-950/50">
                 <button
                     className={`px-3 py-2 rounded-[10px] px-3 py-2 w-[50%] 
                         ${experience === "Organizations" ? "text-black bg-violet-300" : "text-white bg-slate-950 hover:bg-violet-950 transition-colors duration-300"} `}

@@ -1,5 +1,6 @@
 import HeroSection from "../components/HeroSection";
 import ExperienceTable from "../components/ExperienceTable";
+import TechStack from "../components/TechStack";
 
 function Home() {
     return (
@@ -7,6 +8,9 @@ function Home() {
             <HeroSection />
             <section>
                 <ExperienceTable />
+            </section>
+            <section>
+                <TechStack />
             </section>
         </div>
     );

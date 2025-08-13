@@ -12,7 +12,8 @@ function Footer() {
     const d = new Date();
     return (
         <>
-            <div className="flex gap-20 p-7.5 w-full justify-end ">
+            <div className="flex gap-20 p-7.5 mb-5 w-full items-end justify-between border-2 border-white rounded-xl">
+                <h1 className="font-bold text-4xl">Looking for more?</h1>
                 <div className="flex flex-col gap-5 ">
                     <h5 className="font-semibold">Explore</h5>
                     <div className="flex flex-col items-end">
