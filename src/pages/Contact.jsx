@@ -32,7 +32,7 @@ function Contact() {
           </div>
           <div>
             <a
-              href=""
+              href="/Resume.pdf"
               className="py-3 px-4 border-2 border-white rounded-xl text-xl hover:border-violet-400 hover:bg-violet-400 hover:text-violet-950"
             >
               Download Resume
