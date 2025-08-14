@@ -1,10 +1,13 @@
+import { IoHammer } from "react-icons/io5";
 function PageNotFound() {
-    return (
-        <section className="flex flex-col gap-5 py-20">
-            <h1 className="font-bold text-8xl">404 Not Found</h1>
-            <p>Sorry</p>
-        </section>
-    );
+  return (
+    <section className="flex flex-col gap-5 py-20">
+      <h1 className="font-bold text-8xl align-middle">
+        <IoHammer className="inline" /> <span>Under Construction</span>
+      </h1>
+      <p>We're sorry for the inconvenience :((</p>
+    </section>
+  );
 }
 
 export default PageNotFound;

@@ -2,7 +2,7 @@ const about = [
   {
     title: "Hello!",
     text: "I’m Alec, a CS student at De La Salle University with a passion for understanding how things work—both in hardware and software. Whether it’s exploring capabilities of algorithms, diving into operating system internals, or building modern web apps, I enjoy exploring the wonders of technology.",
-    image: "/projects/profile-pic.webp",
+    image: "/about/profile-picture.png",
   },
   {
     title: "Overview",

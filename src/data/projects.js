@@ -1,5 +1,13 @@
 const projects = [
   {
+    date: "Aug 2025",
+    title: "Tech by Alec",
+    description: "The website you are on right now",
+    image: "/projects/tech-by-alec.png",
+    code: "https://github.com/alecbnono/tech-by-alec-frontend",
+    link: "/",
+  },
+  {
     date: "Apr 2024",
     title: "Captured by Dan",
     description:
@@ -26,12 +34,6 @@ const projects = [
     code: "https://github.com/alecbnono/shortysboxwebsite",
     link: "https://shortysbox.vercel.app/",
   },
-  // {
-  //   date: "Aug 2025",
-  //   title: "Tech by Alec",
-  //   description: "The website you are on right now",
-  //   image: "/projects/.webp",
-  // },
 ];
 
 export default projects;
