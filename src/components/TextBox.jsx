@@ -6,7 +6,7 @@ function TextBox({ title, text, image }) {
           <h1 className="font-semibold text-2xl text-slate-50">{title}</h1>
           <p className="text-lg text-slate-200 text-justify">{text}</p>
         </div>
-        <img src={image} alt="" className="h-50 rounded-xl" />
+        <img src={image} alt="" className="md:h-50 rounded-xl" />
       </div>
     );
   } else if (Array.isArray(text)) {
