@@ -27,7 +27,7 @@ function TextBox({ title, text, image }) {
   }
 
   return (
-    <div className="flex flex-col items-start gap-5 p-5 rounded-xl border-2 border-white bg-slate-950/50">
+    <div className="flex flex-col items-start gap-5 p-5 rounded-xl border-2 border-white bg-slate-950/50 whitespace-pre-line">
       <h1 className="font-semibold text-2xl text-slate-50">{title}</h1>
       <p className="text-lg text-slate-200 text-justify">{text}</p>
     </div>

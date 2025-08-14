@@ -20,11 +20,7 @@ const about = [
   },
   {
     title: "Life outside Code",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos et non cum perferendis perspiciatis explicabo enim veniam! Quidem consectetur cumque incidunt expedita quos at alias magni porro, officia perferendis laudantium.",
-  },
-  {
-    title: "Behind the Scenes",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos et non cum perferendis perspiciatis explicabo enim veniam! Quidem consectetur cumque incidunt expedita quos at alias magni porro, officia perferendis laudantium.",
+    text: "When I’m not buried in lines of code, you’ll probably find me in the kitchen, experimenting with recipes—sometimes nailing the perfect comfort dish, sometimes ending up with a “learning experience.” Music is always close by, especially hip-hop, which fuels my focus and keeps me in the zone. \n\n I’m also a big fan of Filipino stand-up comedy, especially the sharp wit of Comedy Manila and the unfiltered humor of Koolpals. Beyond the laughs, I admire how comedians use humor as a bridge—breaking the ice, easing tension, and making strangers feel like friends. It’s inspired me to bring the same energy into how I connect with people: using humor to spark conversations, build rapport, and make interactions feel a little more human. \n\n Lately, I’ve also been exploring the world of fragrances—learning how different scents can capture moods, memories, and even stories. Whether it’s coding, cooking, comedy, or cologne, I love finding the little details that make an experience memorable.",
   },
 ];
 
