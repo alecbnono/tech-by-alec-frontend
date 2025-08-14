@@ -11,7 +11,7 @@ function Contact() {
             <img
               src="/about/profile-picture.png"
               alt=""
-              className="rounded-full w-full mx-20 md:mx-0"
+              className="rounded-full h-[40%] mx-20 md:mx-0"
             />
           </div>
           <div className="text-lg text-slate-400 text-center md:text-left flex-1">
