@@ -6,13 +6,15 @@ function Contact() {
     <section className="flex flex-col gap-20 py-20">
       <h1 className="font-bold text-6xl">Contact</h1>
       <div className="flex flex-col gap-5">
-        <div className="h-75 flex flex-col md:flex-row gap-5 md:gap-15 rounded-xl border-2 border-white p-5 items-center bg-slate-950/50">
-          <img
-            src="/about/profile-picture.png"
-            alt=""
-            className="h-full rounded-full"
-          />
-          <div className="text-lg text-slate-400 text-center md:text-left">
+        <div className="h-75 flex flex-col md:flex-row gap-5 justify-center md:gap-15 rounded-xl border-2 border-white p-5 items-center bg-slate-950/50">
+          <div className="flex-1 flex items-center justify-center object-contain">
+            <img
+              src="/about/profile-picture.png"
+              alt=""
+              className="rounded-full w-full mx-20 md:mx-0"
+            />
+          </div>
+          <div className="text-lg text-slate-400 text-center md:text-left flex-1">
             <h1 className="font-bold text-5xl text-slate-50">Alec Nono</h1>
             <p>Computer Science Student</p>
             <p>Software Engineer</p>
