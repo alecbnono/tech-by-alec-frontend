@@ -7,11 +7,11 @@ function Contact() {
       <h1 className="font-bold text-6xl">Contact</h1>
       <div className="flex flex-col gap-5">
         <div className="h-75 flex flex-col md:flex-row gap-5 justify-center md:gap-15 rounded-xl border-2 border-white p-5 items-center bg-slate-950/50">
-          <div className="flex-1 flex items-center justify-center object-contain">
+          <div className="flex-1 flex h-[40%] md:h-full items-center justify-center object-contain">
             <img
               src="/about/profile-picture.png"
               alt=""
-              className="rounded-full h-[40%] mx-20 md:mx-0"
+              className="rounded-full mx-20 md:mx-0"
             />
           </div>
           <div className="text-lg text-slate-400 text-center md:text-left flex-1">
