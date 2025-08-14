@@ -72,7 +72,7 @@ function HeroSection() {
         </a>
         <a
           target="_blank"
-          href="https://www.linkedin.com/in/alecnono/"
+          href="/Resume.pdf"
           className="border-2 border-slate-100 rounded-[50%] p-2 text-slate-100 hover:bg-violet-500 hover:border-violet-500 hover:text-slate-50 transition-colors duration-300"
         >
           <IoDocumentTextOutline className="text-4xl" />
