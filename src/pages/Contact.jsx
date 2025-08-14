@@ -10,7 +10,7 @@ function Contact() {
           <img
             src="/about/profile-picture.png"
             alt=""
-            className="max-w-40 max-h-40 md:max-h-65 md:max-w-65 flex-1 rounded-full mx-20 md:mx-0 aspect-square"
+            className="max-w-40 max-h-40 md:max-h-65 md:max-w-65 md:flex-1 rounded-full mx-auto md:mx-0 aspect-square"
           />
           <div className="text-lg text-slate-400 text-center md:text-left">
             <h1 className="font-bold text-5xl text-slate-50">Alec Nono</h1>
