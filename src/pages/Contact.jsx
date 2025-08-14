@@ -1,54 +1,40 @@
-import { FaLinkedin } from "react-icons/fa6";
-import { MdOutlineEmail } from "react-icons/md";
-import { FaGlobeAsia } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa6";
+import contacts from "../data/contacts";
+import ContactLink from "../components/ContactLink";
 
 function Contact() {
   return (
     <section className="flex flex-col gap-20 py-20">
       <h1 className="font-bold text-6xl">Contact</h1>
       <div className="flex flex-col gap-5">
-        <div className="h-75 flex gap-15 rounded-xl border-2 border-white p-5 items-center">
+        <div className="h-75 flex flex-col md:flex-row gap-5 md:gap-15 rounded-xl border-2 border-white p-5 items-center bg-slate-950/50">
           <img
             src="/about/profile-picture.png"
             alt=""
             className="h-full rounded-full"
           />
-          <div className="text-left">
-            <h1 className="font-bold text-4xl">Alec Nono</h1>
-            <p>Software Engineer</p>
+          <div className="text-lg text-slate-400 text-center md:text-left">
+            <h1 className="font-bold text-5xl text-slate-50">Alec Nono</h1>
             <p>Computer Science Student</p>
+            <p>Software Engineer</p>
           </div>
         </div>
-        <div className="h-75 flex flex-col justify-between rounded-xl border-2 border-white p-5">
-          <div className="flex flex-col">
-            <div className="flex gap-2 items-center">
-              <MdOutlineEmail />
-              <a href="mailto:alecbnono@gmail.com" target="_blank" className="">
-                alecbnono@gmail.com
-              </a>
-            </div>
-            <div className="flex gap-2 items-center">
-              <FaLinkedin />
-              <a href="https://www.linkedin.com/in/alecnono/" target="_blank">
-                linkedin.com/in/alecnono
-              </a>
-            </div>
-            <div className="flex gap-2 items-center">
-              <FaGithub />
-              <a href="https://github.com/alecbnono" target="_blank">
-                github.com/alecbnono
-              </a>
-            </div>
-            <div className="flex gap-2 items-center">
-              <FaGlobeAsia />
-              <a href="/" target="_blank">
-                techbyalec.dev
-              </a>
-            </div>
+        <div className="h-75 flex flex-col gap-5 md:flex-row items-center justify-evenly rounded-xl border-2 border-white p-5 bg-slate-950/50">
+          <div className="flex flex-col gap-3">
+            {contacts.map((item) => {
+              return (
+                <ContactLink
+                  icon={item.icon}
+                  display={item.display}
+                  link={item.link}
+                />
+              );
+            })}
           </div>
           <div>
-            <a href="" className="py-2 px-3 border-2 border-white rounded-xl">
+            <a
+              href=""
+              className="py-3 px-4 border-2 border-white rounded-xl text-xl hover:border-violet-400 hover:bg-violet-400 hover:text-violet-950"
+            >
               Download Resume
             </a>
           </div>

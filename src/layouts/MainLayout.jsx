@@ -4,10 +4,10 @@ import Footer from "../components/Footer";
 
 function MainLayout() {
   return (
-    <div className="relative bg-slate-950 overflow-hidden">
+    <div className="relative bg-slate-950 overflow-hidden font-[Helvetica]">
       <div className="relative w-screen z-10 overflow-hidden">
         <div className="flex justify-center">
-          <div className="max-w-[650px] w-full text-white text-center">
+          <div className="min-h-screen max-w-[650px] w-full text-white text-center mx-5 md:mx-0">
             <Navbar />
             <main>
               <Outlet></Outlet>
@@ -22,7 +22,7 @@ function MainLayout() {
           className="absolute left-0 right-0 mx-auto 
                     size-75 rounded-full bg-violet-800/75
                     blur-3xl mix-blend-soft-light 
-                    translate-y-30"
+                    translate-y-25"
         ></div>
         <div
           className="absolute left-0 right-0 mx-auto 
