@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 
 function MainLayout() {
   return (
-    <div className="relative bg-slate-950 overflow-hidden font-[Helvetica]">
+    <div className="relative bg-slate-950 overflow-hidden font-helvetica">
       <div className="relative w-screen z-10 overflow-hidden">
         <div className="flex justify-center">
           <div className="min-h-screen max-w-[650px] w-full text-white text-center mx-5 md:mx-0">
