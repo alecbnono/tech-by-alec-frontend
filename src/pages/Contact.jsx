@@ -12,6 +12,7 @@ function Contact() {
               src="/about/profile-picture.png"
               alt=""
               className="rounded-full mx-20 md:mx-0 block w-full h-full object-contain"
+              style="flex: 1 1 0;"
             />
           </div>
           <div className="text-lg text-slate-400 text-center md:text-left flex-1">
