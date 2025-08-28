@@ -20,21 +20,24 @@ function MainLayout() {
       <div className="absolute inset-0 z-0 overflow-hidden">
         <div
           className="absolute left-0 right-0 mx-auto 
-                    size-75 rounded-full bg-violet-800/75
+                    size-70 rounded-full bg-violet-800/75
                     blur-3xl mix-blend-soft-light 
-                    translate-y-25"
+                    translate-y-25 
+                    animate-float-100"
         ></div>
         <div
           className="absolute left-0 right-0 mx-auto 
-                    size-75 rounded-full bg-indigo-800/75
+                    size-70 rounded-full bg-indigo-800/75
                     blur-3xl mix-blend-soft-light 
-                        translate-y-55 translate-x-50"
+                        translate-y-55 translate-x-50
+                    animate-float-200"
         ></div>
         <div
           className="absolute left-0 right-0 mx-auto 
-                    size-75 rounded-full bg-purple-800/75
+                    size-70 rounded-full bg-purple-800/75
                     blur-3xl mix-blend-soft-light 
-                        translate-y-55 -translate-x-50"
+                        translate-y-55 -translate-x-50
+                    animate-float-300"
         ></div>
         <div
           className="absolute left-0 right-0 mx-auto 

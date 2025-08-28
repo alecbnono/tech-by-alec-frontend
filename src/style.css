@@ -2,6 +2,19 @@
 
 @theme {
   --font-helvetica: "Helvetica", "Arial", "Segoe UI", sans-serif;
+  --animate-float-100: float 6s ease-in-out 0s infinite;
+  --animate-float-200: float 6s ease-in-out 1.5s infinite;
+  --animate-float-300: float 6s ease-in-out 3s infinite;
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+  }
 }
 
 @font-face {
