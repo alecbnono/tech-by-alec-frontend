@@ -1,6 +1,15 @@
 const projects = [
   {
     date: "Aug 2025",
+    title: "DLSU CCS Starterpack",
+    description:
+      "A CCS preparation kit built by students, for students — learn programming foundations, explore essential tools, and get ready for your first term at DLSU.",
+    image: "/projects/tech-by-alec.png",
+    code: "https://github.com/alecbnono/dlsu-ccs-starterpack",
+    link: "https://github.com/alecbnono/dlsu-ccs-starterpack",
+  },
+  {
+    date: "Aug 2025",
     title: "Tech by Alec",
     description: "The website you are on right now",
     image: "/projects/tech-by-alec.png",

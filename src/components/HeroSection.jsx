@@ -9,14 +9,14 @@ import { FaGithub } from "react-icons/fa";
 function HeroSection() {
   return (
     <section className="flex flex-col gap-4">
-      <h1 className="font-bold text-8xl">
+      <h1 className="font-bold text-6xl md:text-8xl">
         Hi! I'm{" "}
         <span className="bg-gradient-to-r from-indigo-400 to-violet-200 text-transparent bg-clip-text">
           Alec
         </span>
       </h1>
       <div className="flex gap-10 justify-center ">
-        <h1 className="pl-3 font-medium text-xl text-slate-50">
+        <h1 className="pl-3 font-medium text-lg md:text-xl text-slate-50">
           <TypeAnimation
             sequence={[
               "CS Student @ DLSU",
@@ -35,7 +35,7 @@ function HeroSection() {
           />
         </h1>
       </div>
-      <div className="flex gap-10 justify-center text-lg text-slate-300">
+      <div className="flex gap-10 justify-center text-md md:text-lg text-slate-300">
         <h3 className="flex gap-2 items-center">
           <FaMapPin className="text-red-700" />
           <span>Manila, Philippines</span>

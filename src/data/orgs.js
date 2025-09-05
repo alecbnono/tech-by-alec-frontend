@@ -1,5 +1,12 @@
 const orgs = [
   {
+    dateStart: "Aug 2025",
+    dateEnd: "Present",
+    title: "Lead Developer",
+    description: "Google Developer Groups on Campus - DLSU",
+    image: "/orgs/gdsc.png",
+  },
+  {
     dateStart: "Feb 2025",
     dateEnd: "Aug 2025",
     title: "Web Development Executive",
