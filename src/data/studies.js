@@ -13,6 +13,20 @@ const studies = [
     description: "Science, Technology, Engineering, Mathematics Strand",
     image: "/studies/ustshs.jpg",
   },
+  {
+    dateStart: "Aug 2018",
+    dateEnd: "Jun 2022",
+    title: "University of Santo Tomas - Junior High School",
+    description: "Junior High School Certificate",
+    image: "/studies/ustjhs.png",
+  },
+  {
+    dateStart: "Jun 2011",
+    dateEnd: "Mar 2018",
+    title: "Don Bosco Technical Institute - Makati",
+    description: "Elementary Diploma",
+    image: "/studies/dbti.png",
+  },
 ];
 
 export default studies;
