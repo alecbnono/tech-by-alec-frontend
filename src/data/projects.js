@@ -4,7 +4,7 @@ const projects = [
     title: "DLSU CCS Starterpack",
     description:
       "A CCS preparation kit built by students, for students — learn programming foundations, explore essential tools, and get ready for your first term at DLSU.",
-    image: "/projects/ccs_starterpack.png",
+    image: "/projects/ccs-starterpack.png",
     code: "https://github.com/alecbnono/dlsu-ccs-starterpack",
     link: "https://github.com/alecbnono/dlsu-ccs-starterpack",
   },
