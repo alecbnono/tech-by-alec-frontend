@@ -4,11 +4,10 @@ import { FaSquareJs } from "react-icons/fa6";
 import { FaReact } from "react-icons/fa6";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaNodeJs } from "react-icons/fa6";
-import { SiExpress, SiMysql } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
 import { FaCopyright } from "react-icons/fa6";
 import { FaPython } from "react-icons/fa6";
 import { FaJava } from "react-icons/fa6";
-
 import { TbBrandMysql } from "react-icons/tb";
 import { FaGitAlt } from "react-icons/fa";
 

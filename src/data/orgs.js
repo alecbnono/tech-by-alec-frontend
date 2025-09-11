@@ -2,7 +2,7 @@ const orgs = [
   {
     dateStart: "Aug 2025",
     dateEnd: "Present",
-    title: "Lead Developer (formerly Chief Development Officer)",
+    title: "Technical Project Manager (formerly Chief Development Officer)",
     description: "Google Developer Groups on Campus - DLSU",
     image: "/orgs/gdsc.png",
   },
