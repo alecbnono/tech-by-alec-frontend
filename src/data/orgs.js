@@ -4,7 +4,7 @@ const orgs = [
     dateEnd: "Present",
     title: "Frontend Engineer",
     description: "La Salle Computer Society - DLSU",
-    image: "/orgs/lscs.png",
+    image: "/orgs/lscs.jpg",
   },
   {
     dateStart: "Aug 2025",
