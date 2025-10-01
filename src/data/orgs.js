@@ -1,5 +1,12 @@
 const orgs = [
   {
+    dateStart: "Sept 2025",
+    dateEnd: "Present",
+    title: "Frontend Engineer",
+    description: "La Salle Computer Society - DLSU",
+    image: "/orgs/lscs.png",
+  },
+  {
     dateStart: "Aug 2025",
     dateEnd: "Present",
     title: "Technical Project Manager",
