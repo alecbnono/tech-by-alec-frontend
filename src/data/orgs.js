@@ -1,5 +1,12 @@
 const orgs = [
   {
+    dateStart: "Oct 2025",
+    dateEnd: "Present",
+    title: "Tutor",
+    description: "Peer Tutors Society - DLSU",
+    image: "/orgs/pts.jpg",
+  },
+  {
     dateStart: "Sept 2025",
     dateEnd: "Present",
     title: "Frontend Engineer",
