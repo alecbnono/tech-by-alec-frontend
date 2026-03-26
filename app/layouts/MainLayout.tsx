@@ -1,6 +1,6 @@
 import { Outlet } from "react-router";
-import Navbar from "../components/Navbar";
-import Footer from "~/components/Footer";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import BackgroundLayout from "./BackgroundLayout";
 
 export default function MainLayout() {
@@ -11,7 +11,7 @@ export default function MainLayout() {
                 <div className="flex justify-center">
                     <div className="min-h-screen max-w-[650px] w-full text-white text-center mx-5 md:mx-0">
                         <Navbar />
-                        <main>
+                        <main className="py-10">
                             <Outlet />
                         </main>
                         <Footer />
