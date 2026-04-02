@@ -3,6 +3,7 @@ import HeroSection from "@/features/home/components/HeroSection";
 import ExperienceTable from "@/features/home/components/ExperienceTable";
 import TechStack from "@/features/home/components/TechStack";
 import ProjectGrid from "@/features/projects/components/ProjectGrid";
+import BlogList from "@/features/blog/components/BlogList";
 
 export function meta({ }: Route.MetaArgs) {
     return [
@@ -16,6 +17,7 @@ export default function Home() {
         <div className="flex flex-col gap-12 py-4">
             <HeroSection />
             <ProjectGrid preview={true} />
+            <BlogList preview={true} />
             <TechStack />
             <ExperienceTable />
         </div>

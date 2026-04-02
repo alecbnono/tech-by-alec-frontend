@@ -1,0 +1,82 @@
+---
+title: "Building My Blog with MDX"
+description: "How I set up a frontend-only blog using MDX compiled at build time with Vite and React Router."
+date: "2026-04-02"
+tags: ["react", "mdx", "vite"]
+coverImage: "/projects/tech-by-alec.png"
+coAuthors: ["Claude"]
+published: true
+---
+
+## Why MDX?
+
+I wanted a blog that lives entirely in the frontend — no API endpoints, no CMS, no database. Just files in the repo that get compiled into React components at build time.
+
+**MDX** makes this possible by letting me write markdown with embedded JSX. The result is a rich authoring experience without sacrificing the component model.
+
+## How it works
+
+Each blog post is a `.mdx` file with frontmatter at the top:
+
+```yaml
+---
+title: "My Post Title"
+description: "A short summary."
+date: "2026-04-02"
+tags: ["react", "mdx"]
+published: true
+---
+```
+
+During `npm run build`, Vite compiles each `.mdx` file into a JavaScript module. The frontmatter becomes a named export, and the body becomes a React component.
+
+## The content pipeline
+
+The blog uses two `import.meta.glob` calls:
+
+1. **Eager metadata** — loads frontmatter from every post at build time for the blog index
+2. **Lazy modules** — loads the full post component only when a user navigates to it
+
+This means the blog index page knows about every post without shipping their full content to the browser upfront.
+
+## What you can do in MDX
+
+Since MDX compiles to React, you get full support for:
+
+- **Bold**, *italic*, and ~~strikethrough~~ text
+- [Links](https://example.com) that render as real anchor elements
+- Inline `code` and fenced code blocks
+- Lists, blockquotes, tables, and more
+
+> MDX is markdown for the component era.
+
+### Code blocks
+
+```ts
+const posts = import.meta.glob("@/data/blogs/*.mdx", { eager: true });
+```
+
+### Tables
+
+| Feature | Supported |
+|---------|-----------|
+| Markdown | Yes |
+| JSX components | Yes |
+| Frontmatter | Yes |
+| Code blocks | Yes |
+| Images | Yes |
+
+### Task lists
+
+- [x] Set up MDX compilation
+- [x] Create blog routes
+- [x] Style article content
+- [ ] Write more posts
+
+## What's next
+
+This setup keeps things simple while leaving room to grow. Adding features like syntax highlighting, custom components, or even search is straightforward since everything is already React.
+
+---
+
+*This post was written in MDX and compiled at build time.*

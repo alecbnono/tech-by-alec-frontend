@@ -21,3 +21,27 @@ export interface ProjectEntry {
   code: string;
   link: string;
 }
+
+export interface BlogFrontmatter {
+  title: string;
+  description: string;
+  date: string;
+  rawDate: string;
+  tags: string[];
+  coverImage?: string;
+  coAuthors?: string[];
+  published: boolean;
+}
+
+export interface BlogListItem extends BlogFrontmatter {
+  slug: string;
+}
+
+export interface MDXProps {
+  components?: Record<string, ComponentType<any>>;
+}
+
+export interface BlogPostModule {
+  default: ComponentType<MDXProps>;
+  frontmatter: BlogFrontmatter;
+}
