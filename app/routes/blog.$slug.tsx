@@ -100,7 +100,7 @@ export default function BlogPost() {
                 <img
                     src={frontmatter.coverImage}
                     alt={frontmatter.title}
-                    className="w-full aspect-[3/1] object-cover rounded-xl"
+                    className="w-full aspect-[3/2] object-cover rounded-xl"
                 />
             )}
 
