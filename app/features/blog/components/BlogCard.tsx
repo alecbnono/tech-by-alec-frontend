@@ -17,7 +17,7 @@ interface BlogCardProps {
 export default function BlogCard({ post, showImage, isLast }: BlogCardProps) {
     return (
         <Link to={`/blog/${post.slug}`} className="group">
-            <Card className={`flex flex-row gap-0 items-center p-2 bg-zinc-900 h-32 rounded-none ${!isLast ? "border-b-2 border-zinc-700" : ""}`}>
+            <Card className={`flex flex-row gap-0 items-center p-2 bg-transparent h-32 rounded-none ring-0 shadow-none ${!isLast ? "border-b border-[rgba(255,255,255,0.12)]" : "border-0"}`}>
                 {showImage && post.coverImage && (
                     <CardHeader className="p-0 w-52">
                         <img
@@ -30,15 +30,15 @@ export default function BlogCard({ post, showImage, isLast }: BlogCardProps) {
                 <div className="flex flex-col gap-8 justify-between h-full w-full">
                     <CardContent className="flex flex-col py-1 px-4 justify-between w-full h-full">
                         <div className="flex justify-between items-end">
-                            <CardTitle className="text-zinc-200 group-hover:text-indigo-400 transition-colors duration-300">
+                            <CardTitle className="text-zinc-100 font-semibold group-hover:text-violet-300 transition-colors duration-300">
                                 {post.title}
                             </CardTitle>
-                            <CardDescription className="text-zinc-600 shrink-0">
+                            <CardDescription className="text-zinc-400 text-xs shrink-0">
                                 {post.date}
                             </CardDescription>
                         </div>
                         <div>
-                            <CardDescription className="text-xs text-zinc-500 text-justify">
+                            <CardDescription className="text-xs text-zinc-400 text-justify">
                                 {post.description}
                             </CardDescription>
                             {post.tags.length > 0 && (
@@ -46,7 +46,7 @@ export default function BlogCard({ post, showImage, isLast }: BlogCardProps) {
                                     {post.tags.map((tag) => (
                                         <span
                                             key={tag}
-                                            className="text-xs px-2 py-0.5 rounded-md bg-zinc-800 text-zinc-400 border border-zinc-700"
+                                            className="text-xs px-2 py-0.5 rounded-md bg-[rgba(18,14,50,0.52)] text-zinc-300 border border-[rgba(255,255,255,0.08)]"
                                         >
                                             {tag}
                                         </span>

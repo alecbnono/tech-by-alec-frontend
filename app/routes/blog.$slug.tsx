@@ -72,7 +72,7 @@ export default function BlogPost() {
                 <h2 className="text-3xl font-semibold text-zinc-200">Post Not Found</h2>
                 <p className="text-zinc-400">This blog post doesn't exist.</p>
                 <Link to="/blog">
-                    <Button className="border-2 border-zinc-600 p-3 bg-zinc-800/80 text-zinc-300 hover:bg-indigo-600 hover:border-indigo-600 hover:text-zinc-100 transition-colors duration-300 cursor-pointer">
+                    <Button className="p-3 bg-[rgba(18,14,50,0.52)] backdrop-blur-md border border-[rgba(255,255,255,0.08)] text-zinc-200 hover:bg-[rgba(30,22,75,0.65)] transition-all duration-300 cursor-pointer">
                         <FaArrowLeft /> Back to Blog
                     </Button>
                 </Link>
@@ -89,9 +89,9 @@ export default function BlogPost() {
     }
 
     return (
-        <div className="flex flex-col gap-8 rounded-2xl border border-zinc-700/60 bg-slate-950/45 backdrop-blur-md px-4 py-6 md:px-8 md:py-10">
+        <div className="flex flex-col gap-8 rounded-2xl glass px-4 py-6 md:px-8 md:py-10">
             <Link to="/blog" className="self-start">
-                <Button className="border-2 border-zinc-600 p-3 bg-zinc-800/80 text-zinc-300 hover:bg-indigo-600 hover:border-indigo-600 hover:text-zinc-100 transition-colors duration-300 cursor-pointer">
+                <Button className="p-3 bg-[rgba(18,14,50,0.52)] backdrop-blur-md border border-[rgba(255,255,255,0.08)] text-zinc-200 hover:bg-[rgba(30,22,75,0.65)] transition-all duration-300 cursor-pointer">
                     <FaArrowLeft /> Back to Blog
                 </Button>
             </Link>
@@ -106,7 +106,7 @@ export default function BlogPost() {
 
             <header className="flex flex-col gap-3">
                 <h1 className="text-3xl md:text-6xl text-left font-bold text-zinc-100">{frontmatter.title}</h1>
-                <div className="flex items-center gap-2 text-zinc-400">
+                <div className="flex items-center gap-2 text-zinc-500">
                     <LuCalendar className="mb-1" />
                     <p className="text-sm">
                         {frontmatter.date}
@@ -117,7 +117,7 @@ export default function BlogPost() {
                         {frontmatter.tags.map((tag) => (
                             <span
                                 key={tag}
-                                className="text-xs px-2 py-0.5 rounded-md bg-zinc-800 text-zinc-400 border border-zinc-700"
+                                className="text-xs px-2 py-0.5 rounded-md bg-[rgba(18,14,50,0.52)] text-zinc-300 border border-[rgba(255,255,255,0.08)]"
                             >
                                 {tag}
                             </span>

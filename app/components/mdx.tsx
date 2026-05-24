@@ -22,7 +22,7 @@ function BlogLink(props: ComponentPropsWithoutRef<"a">) {
     return (
         <a
             {...props}
-            className="text-indigo-400 underline underline-offset-2 hover:text-indigo-300 transition-colors duration-200"
+            className="text-violet-400 underline underline-offset-2 hover:text-violet-300 transition-colors duration-200"
             {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
         />
     );
@@ -32,7 +32,7 @@ function BlogBlockquote(props: ComponentPropsWithoutRef<"blockquote">) {
     return (
         <blockquote
             {...props}
-            className="border-l-4 border-indigo-600 pl-4 py-1 my-4 text-zinc-400 italic bg-zinc-900/50 rounded-r-lg"
+            className="border-l-4 border-violet-600 pl-4 py-1 my-4 text-zinc-400 italic bg-zinc-900/50 rounded-r-lg"
         />
     );
 }
@@ -55,7 +55,7 @@ function BlogCode(props: ComponentPropsWithoutRef<"code">) {
     return (
         <code
             {...props}
-            className="text-sm bg-zinc-800 text-indigo-300 px-1.5 py-0.5 rounded-md"
+            className="text-sm bg-zinc-800 text-violet-300 px-1.5 py-0.5 rounded-md"
         />
     );
 }

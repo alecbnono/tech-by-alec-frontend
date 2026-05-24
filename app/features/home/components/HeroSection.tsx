@@ -18,10 +18,10 @@ export default function HeroSection() {
                         // className="bg-gradient-to-r from-sky-50 to-sky-200 text-transparent bg-clip-text"
                         > Alec</span>
                     </h1>
-                    <p className="font-medium text-lg md:text-xl text-zinc-50">
-                        <span className="text-zinc-200">I build </span>
+                    <p className="font-medium text-lg md:text-xl text-zinc-300">
+                        <span>I build </span>
                         <span
-                            className="bg-gradient-to-r from-cyan-50 to-cyan-100 text-transparent bg-clip-text"
+                            className="bg-gradient-to-r from-violet-300 to-blue-300 text-transparent bg-clip-text"
                         >
                             <TypeAnimation
                                 sequence={[
@@ -49,18 +49,20 @@ export default function HeroSection() {
                 </div>
 
                 <div className="py-4">
-                    <p className="text-left text-zinc-200">
+                    <p className="text-left text-zinc-300">
                         CS Student @ DLSU working on real-world systems across full-stack, DevOps, and data with a focus on nation-building.
                     </p>
                 </div>
 
                 <div className="flex gap-3 justify-center pt-3 text-zinc-400 items-center">
-                    <a target="_blank" href="Resume.pdf" className="h-fit">
-                        <Button className="border-2 border-zinc-600 p-3 bg-zinc-800/80 text-zinc-300 hover:bg-indigo-600 hover:border-indigo-600 hover:text-zinc-100 transition-colors duration-300 cursor-pointer">
-                            <span>Resume</span>
-                            <LuFileDown size={32} />
-                        </Button>
-                    </a>
+                    <div className="resume-btn">
+                        <a target="_blank" href="Resume.pdf" className="h-fit">
+                            <Button className="resume-glass-btn p-3 rounded-[8px] border-0 text-zinc-100 cursor-pointer">
+                                <span>Resume</span>
+                                <LuFileDown size={32} />
+                            </Button>
+                        </a>
+                    </div>
                     <a
                         target="_blank"
                         href="https://www.linkedin.com/in/alecnono/"
@@ -84,7 +86,14 @@ export default function HeroSection() {
                     </a>
                 </div>
             </section>
-            <img src="/about/profile-picture.png" alt="" className="h-64 w-48 md:h-72 md:w-54 rounded-xl object-cover rotate-[2.5deg] -translate-y-2" />
+            <div className="glass-photo-outer relative h-64 w-48 md:h-72 md:w-54 rotate-[2.5deg] -translate-y-2 shrink-0">
+                <div className="glass-photo-frame relative h-full w-full">
+                    <img src="/about/profile-picture.png" alt="" className="h-full w-full rounded-[11px] object-cover" />
+                    <div className="glass-photo-sheen-1" />
+                    <div className="glass-photo-sheen-2" />
+                    <div className="glass-photo-rim" />
+                </div>
+            </div>
 
         </div>
     );

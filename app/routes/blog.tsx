@@ -16,7 +16,7 @@ export default function Blog() {
 
     return (
         <div className="flex flex-col gap-6">
-            <h1 className="text-2xl font-medium">Blog</h1>
+            <h1 className="text-3xl font-semibold text-zinc-50">Blog</h1>
 
             <div className="flex flex-col sm:flex-row gap-3">
                 {/* Search input */}
@@ -27,14 +27,14 @@ export default function Blog() {
                         placeholder="Search posts..."
                         value={searchQuery}
                         onChange={(e) => setSearchQuery(e.target.value)}
-                        className="w-full pl-9 pr-3 py-2 bg-zinc-900 border-2 border-zinc-700 rounded-xl text-sm text-zinc-200 placeholder:text-zinc-500 focus:outline-none focus:border-indigo-600 transition-colors duration-300"
+                        className="w-full pl-9 pr-3 py-2 bg-[rgba(18,14,50,0.45)] backdrop-blur-md border border-[rgba(255,255,255,0.08)] rounded-xl text-sm text-zinc-200 placeholder:text-zinc-500 focus:outline-none focus:border-[rgba(255,255,255,0.2)] transition-all duration-300"
                     />
                 </div>
 
                 {/* Sort toggle */}
                 <button
                     onClick={() => setSortOrder((prev) => (prev === "newest" ? "oldest" : "newest"))}
-                    className="flex items-center gap-2 px-3 py-2 bg-zinc-900 border-2 border-zinc-700 rounded-xl text-sm text-zinc-300 hover:border-indigo-600 transition-colors duration-300 cursor-pointer shrink-0"
+                    className="flex items-center gap-2 px-3 py-2 glass rounded-xl text-sm text-zinc-300 hover:bg-[rgba(30,22,75,0.65)] transition-all duration-300 cursor-pointer shrink-0"
                 >
                     <LuArrowDownUp className="size-4" />
                     {sortOrder === "newest" ? "Newest" : "Oldest"}

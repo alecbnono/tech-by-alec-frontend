@@ -14,7 +14,7 @@ function Navbar() {
     return (
         <nav className="flex justify-center pt-5 md:pt-10">
             <Tabs value={location.pathname} className="grow">
-                <TabsList className="flex items-center justify-evenly gap-1 md:gap-2 bg-zinc-900/50 border-2 border-zinc-700 p-[5px] text-sm md:text-lg rounded-[15px] w-full">
+                <TabsList className="flex items-center justify-evenly gap-1 md:gap-2 glass p-[5px] text-sm md:text-lg rounded-[15px] w-full">
                     {navItems.map((item) => (
                         <TabsTrigger
                             key={item.path}
@@ -23,7 +23,7 @@ function Navbar() {
                         >
                             <NavLink
                                 to={item.path}
-                                className="py-1 rounded-[10px] flex-1 grow px-3 text-zinc-100 text-lg hover:text-zinc-100 hover:bg-indigo-900/50 transition-colors duration-300 data-active:bg-indigo-600 data-active:text-zinc-100"
+                                className="py-1 rounded-[10px] flex-1 grow px-3 text-zinc-100/80 text-lg hover:text-zinc-100 hover:bg-[rgba(20,15,45,0.6)] transition-all duration-300 data-active:bg-[rgba(45,35,95,0.72)] data-active:text-zinc-100"
                             >
                                 {item.name}
                             </NavLink>

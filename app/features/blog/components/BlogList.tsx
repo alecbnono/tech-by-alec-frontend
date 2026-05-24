@@ -43,7 +43,7 @@ export default function BlogList({ preview, searchQuery = "", sortOrder = "newes
     if (allPosts.length === 0) {
         return (
             <div className="flex flex-col gap-8">
-                <h1 className="text-2xl font-medium">Blog</h1>
+                <h2 className="text-2xl font-semibold text-zinc-50">Blog</h2>
                 <p className="text-zinc-400">No posts yet. Check back soon.</p>
             </div>
         );
@@ -54,8 +54,8 @@ export default function BlogList({ preview, searchQuery = "", sortOrder = "newes
         return (
             <div className="flex flex-col gap-4 items-center">
                 <div className="flex flex-col gap-8">
-                    <h1 className="text-2xl font-medium">Blog</h1>
-                    <div className="flex flex-col border-2 border-zinc-600 rounded-xl overflow-hidden">
+                    <h2 className="text-2xl font-semibold text-zinc-50">Blog</h2>
+                    <div className="flex flex-col glass rounded-xl overflow-hidden">
                         {previewPosts.map((post, index) => (
                             <BlogCard
                                 key={post.slug}
@@ -67,7 +67,7 @@ export default function BlogList({ preview, searchQuery = "", sortOrder = "newes
                     </div>
                 </div>
                 <Link to="/blog" className="h-fit">
-                    <Button className="w-fit border-2 border-zinc-600 p-3 bg-zinc-800/80 text-zinc-300 hover:bg-indigo-600 hover:border-indigo-600 hover:text-zinc-100 transition-colors duration-300 cursor-pointer">
+                    <Button className="w-fit bg-[rgba(18,14,50,0.52)] backdrop-blur-md border border-[rgba(255,255,255,0.08)] p-3 text-zinc-200 hover:bg-[rgba(30,22,75,0.65)] transition-all duration-300 cursor-pointer">
                         View More <FaArrowRight />
                     </Button>
                 </Link>
@@ -80,7 +80,7 @@ export default function BlogList({ preview, searchQuery = "", sortOrder = "newes
             {filteredAndSorted.length === 0 ? (
                 <p className="text-zinc-400">No posts match your search.</p>
             ) : (
-                <div className="flex flex-col border-2 border-zinc-600 rounded-xl overflow-hidden">
+                <div className="flex flex-col glass rounded-xl overflow-hidden">
                     {filteredAndSorted.map((post, index) => (
                         <BlogCard
                             key={post.slug}
